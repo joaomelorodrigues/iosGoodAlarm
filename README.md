@@ -1,9 +1,38 @@
+<p align="center">
+  <img src="GoodAlarm/Assets.xcassets/AppIcon.appiconset/AppIcon.png" width="112" alt="Good Alarm icon">
+</p>
+
 # Good Alarm
 
 An iOS alarm clock with the features Android has had for years: any song as the alarm,
 volume per alarm, gradual fade-in, custom snooze length, skip next ring, and quick naps.
 
 iPhone and iPad, iOS/iPadOS 26.1+ (AlarmKit). Built with Xcode 27, Swift 6 and SwiftUI, using native Liquid Glass components.
+
+## Screenshots
+
+<p align="center">
+  <img src="AppStore/screenshots/iphone-1-alarms.png" width="250" alt="Alarm list with the next alarm, an upcoming alarm you can skip, and a glass toolbar">
+  <img src="AppStore/screenshots/iphone-2-editor.png" width="250" alt="Alarm editor with time wheel, weekday buttons and repeat presets">
+  <img src="AppStore/screenshots/iphone-3-volume-fade.png" width="250" alt="Per-alarm volume slider and gradual fade-in setting">
+</p>
+<p align="center">
+  <img src="AppStore/screenshots/iphone-5-sounds.png" width="250" alt="Sound picker: music library, video from Photos, Files and built-in tones">
+  <img src="AppStore/screenshots/iphone-4-vibration.png" width="250" alt="Vibration on/off and pattern picker">
+  <img src="AppStore/screenshots/iphone-6-ringing.png" width="250" alt="Ringing screen with Snooze and Stop">
+</p>
+
+<details>
+<summary>iPad</summary>
+<p align="center">
+  <img src="AppStore/screenshots/ipad-1-alarms.png" width="380" alt="Alarm list on iPad">
+  <img src="AppStore/screenshots/ipad-2-editor.png" width="380" alt="Alarm editor on iPad">
+</p>
+<p align="center">
+  <img src="AppStore/screenshots/ipad-5-sounds.png" width="380" alt="Sound picker on iPad">
+  <img src="AppStore/screenshots/ipad-6-ringing.png" width="380" alt="Ringing screen on iPad">
+</p>
+</details>
 
 ## Build
 
