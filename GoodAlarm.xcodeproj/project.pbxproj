@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0736BA8C64DF9DA4315222DA /* SystemVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52928475E37BB147E774EC0A /* SystemVolume.swift */; };
+		167CC4A059A97992B1042BDF /* GoodAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04181883E59A412F9D5B358 /* GoodAlarmApp.swift */; };
+		16FB9128455225F331D30A56 /* GoodAlarmWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D30B2C1284C041B91D285 /* GoodAlarmWidgetsBundle.swift */; };
+		2A0D16A8B24491D0ADA2FFB8 /* AlarmIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1272FD665F4525346DAD8E00 /* AlarmIntents.swift */; };
+		2BFC0AA75D7B10A2CE126223 /* GoodAlarmMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A39FFD28CD0AA27FE71D9 /* GoodAlarmMetadata.swift */; };
+		2C0E33088C1A9FABE4E9AB13 /* Vibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB0106DB40EB879F056F7A /* Vibrator.swift */; };
+		301CADADB172B265E91EA4E5 /* SoundPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E3800DEA922DDB80C77C9E /* SoundPickerView.swift */; };
+		3240B4B3000C61CD82CF7B86 /* ToneSynth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FBE8AD41624DF16AEB1828 /* ToneSynth.swift */; };
+		3CE2B6535BBAE03F11BA4386 /* ClipRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A3F704619094E1FC506C5D /* ClipRenderer.swift */; };
+		48C09C0476129E8116683F2A /* FadingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45365728730F277EFBFB31DA /* FadingPlayer.swift */; };
+		50D3303E57B4CD2C66061F1F /* SoundItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CCA29BEC1EE7D32E5A7B8D /* SoundItem.swift */; };
+		59ED82395E2E42DC03559C1B /* GoodAlarmWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 115837F8D91E6835E2115957 /* GoodAlarmWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5DE498198B9A4C6E37A249ED /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F7FE7CD607B6FE81F0FFA /* SettingsView.swift */; };
+		64D4CB5F7112A2E8A0894F5C /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6250C6A9DE5E1519C58E77CF /* AlarmListView.swift */; };
+		64E01C416DA0F0392D16B5CE /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191B6479B9CD5F0FEEE486C2 /* Components.swift */; };
+		8225F3840A65253858A677A1 /* AlarmLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F378FAE761ED9358D8F085 /* AlarmLiveActivity.swift */; };
+		838D12387DE751E85118C9A4 /* AlarmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AC2F1979AE44630A56566 /* AlarmItem.swift */; };
+		8CE4E2DB15390913F0FFB73C /* AlarmScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F18C31F989106D344868D /* AlarmScheduler.swift */; };
+		94FB07F102495A4C3844B4C8 /* Vibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A31BDFD2CB56970C1BB7 /* Vibration.swift */; };
+		AD47A5DCC4FB19158FC6A32F /* AlarmEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF669B1F73A15F3B0E1232F /* AlarmEditorView.swift */; };
+		B607AE0135A9AC7BA20A13F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471DDA10B029F0D7D497D5E9 /* Assets.xcassets */; };
+		B74D638C914A90FE58D05617 /* RingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DBFBBFCD2FE4CF643056EF /* RingEngine.swift */; };
+		B9C782A5BF0341D9D258E3E2 /* SoundLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD2BA134E38615D9315BE6 /* SoundLibrary.swift */; };
+		BEB87B815634FD43459C52A9 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3A6037FACB473CC9BFF32 /* AppSettings.swift */; };
+		CF74DA7D23F313DC7BD553D4 /* SoundImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E18E82C573721A2FE06259F /* SoundImporter.swift */; };
+		D4CF393FF95DE5E7DC8381FB /* GoodAlarmMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A39FFD28CD0AA27FE71D9 /* GoodAlarmMetadata.swift */; };
+		D657986BD21AE75E49DB8706 /* AlarmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBBF5AAAE4097CC736DB4A8 /* AlarmStore.swift */; };
+		E86BF79D69E71FE091945960 /* AlarmRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A80D50DE2986C413F4918 /* AlarmRowView.swift */; };
+		F327006D73120166C3F575D4 /* RingingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC5F74FEA1E22AF31D09275 /* RingingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A072A4F3051819516A1E820B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC6A53C5C48C137E6C051C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE9C4F76E1C173FBF24DD44;
+			remoteInfo = GoodAlarmWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3954D10AE6B28CF77982BBBB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				59ED82395E2E42DC03559C1B /* GoodAlarmWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07A3F704619094E1FC506C5D /* ClipRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipRenderer.swift; sourceTree = "<group>"; };
+		0C1A39FFD28CD0AA27FE71D9 /* GoodAlarmMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodAlarmMetadata.swift; sourceTree = "<group>"; };
+		115837F8D91E6835E2115957 /* GoodAlarmWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = GoodAlarmWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1272FD665F4525346DAD8E00 /* AlarmIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmIntents.swift; sourceTree = "<group>"; };
+		191B6479B9CD5F0FEEE486C2 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		192AC2F1979AE44630A56566 /* AlarmItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItem.swift; sourceTree = "<group>"; };
+		2002F48FA46CC383EBA67A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		33C3A6037FACB473CC9BFF32 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		3A3A80D50DE2986C413F4918 /* AlarmRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRowView.swift; sourceTree = "<group>"; };
+		45365728730F277EFBFB31DA /* FadingPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadingPlayer.swift; sourceTree = "<group>"; };
+		471DDA10B029F0D7D497D5E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E18E82C573721A2FE06259F /* SoundImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundImporter.swift; sourceTree = "<group>"; };
+		4FBBF5AAAE4097CC736DB4A8 /* AlarmStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmStore.swift; sourceTree = "<group>"; };
+		52928475E37BB147E774EC0A /* SystemVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemVolume.swift; sourceTree = "<group>"; };
+		6250C6A9DE5E1519C58E77CF /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
+		62DBFBBFCD2FE4CF643056EF /* RingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingEngine.swift; sourceTree = "<group>"; };
+		65BD2BA134E38615D9315BE6 /* SoundLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLibrary.swift; sourceTree = "<group>"; };
+		66E3800DEA922DDB80C77C9E /* SoundPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPickerView.swift; sourceTree = "<group>"; };
+		79F378FAE761ED9358D8F085 /* AlarmLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmLiveActivity.swift; sourceTree = "<group>"; };
+		7BF162EC181A2CE9B218CD15 /* GoodAlarm.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GoodAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8091BE2621472A93D7CAD420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8AC5F74FEA1E22AF31D09275 /* RingingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingView.swift; sourceTree = "<group>"; };
+		B2FBE8AD41624DF16AEB1828 /* ToneSynth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneSynth.swift; sourceTree = "<group>"; };
+		BCF669B1F73A15F3B0E1232F /* AlarmEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEditorView.swift; sourceTree = "<group>"; };
+		CF0F7FE7CD607B6FE81F0FFA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DB24A31BDFD2CB56970C1BB7 /* Vibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
+		E04181883E59A412F9D5B358 /* GoodAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodAlarmApp.swift; sourceTree = "<group>"; };
+		E23D30B2C1284C041B91D285 /* GoodAlarmWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodAlarmWidgetsBundle.swift; sourceTree = "<group>"; };
+		E8CCA29BEC1EE7D32E5A7B8D /* SoundItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundItem.swift; sourceTree = "<group>"; };
+		F33F18C31F989106D344868D /* AlarmScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmScheduler.swift; sourceTree = "<group>"; };
+		FBAB0106DB40EB879F056F7A /* Vibrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibrator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3C119E680C85510BCF567DCE /* GoodAlarmWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				79F378FAE761ED9358D8F085 /* AlarmLiveActivity.swift */,
+				E23D30B2C1284C041B91D285 /* GoodAlarmWidgetsBundle.swift */,
+				8091BE2621472A93D7CAD420 /* Info.plist */,
+			);
+			path = GoodAlarmWidgets;
+			sourceTree = "<group>";
+		};
+		4AB03052AD07C3BBF0DD28FC /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				1272FD665F4525346DAD8E00 /* AlarmIntents.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		5090E085191E5753DBB74FED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				192AC2F1979AE44630A56566 /* AlarmItem.swift */,
+				33C3A6037FACB473CC9BFF32 /* AppSettings.swift */,
+				E8CCA29BEC1EE7D32E5A7B8D /* SoundItem.swift */,
+				DB24A31BDFD2CB56970C1BB7 /* Vibration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6028C0ADACECE3EAA78CDCCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BF162EC181A2CE9B218CD15 /* GoodAlarm.app */,
+				115837F8D91E6835E2115957 /* GoodAlarmWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80C9C17629F35A1473943ED0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCF669B1F73A15F3B0E1232F /* AlarmEditorView.swift */,
+				6250C6A9DE5E1519C58E77CF /* AlarmListView.swift */,
+				3A3A80D50DE2986C413F4918 /* AlarmRowView.swift */,
+				191B6479B9CD5F0FEEE486C2 /* Components.swift */,
+				8AC5F74FEA1E22AF31D09275 /* RingingView.swift */,
+				CF0F7FE7CD607B6FE81F0FFA /* SettingsView.swift */,
+				66E3800DEA922DDB80C77C9E /* SoundPickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89ADC406B9F22E2F4AFAE477 /* Scheduling */ = {
+			isa = PBXGroup;
+			children = (
+				F33F18C31F989106D344868D /* AlarmScheduler.swift */,
+			);
+			path = Scheduling;
+			sourceTree = "<group>";
+		};
+		8C40912686B9094DCAC65C9B /* GoodAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				471DDA10B029F0D7D497D5E9 /* Assets.xcassets */,
+				2002F48FA46CC383EBA67A8A /* Info.plist */,
+				9013802AA5259CF8E023AF10 /* App */,
+				FFD56C15222E08BB8C29E7F9 /* Audio */,
+				4AB03052AD07C3BBF0DD28FC /* Intents */,
+				5090E085191E5753DBB74FED /* Model */,
+				89ADC406B9F22E2F4AFAE477 /* Scheduling */,
+				B3E2D728938FD848828DE296 /* Store */,
+				80C9C17629F35A1473943ED0 /* Views */,
+			);
+			path = GoodAlarm;
+			sourceTree = "<group>";
+		};
+		9013802AA5259CF8E023AF10 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E04181883E59A412F9D5B358 /* GoodAlarmApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B3E2D728938FD848828DE296 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				4FBBF5AAAE4097CC736DB4A8 /* AlarmStore.swift */,
+				65BD2BA134E38615D9315BE6 /* SoundLibrary.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		EBEDDB45BAA2860C257B78AC = {
+			isa = PBXGroup;
+			children = (
+				8C40912686B9094DCAC65C9B /* GoodAlarm */,
+				3C119E680C85510BCF567DCE /* GoodAlarmWidgets */,
+				F3560F2C7DCE4F403CF2F2F8 /* Shared */,
+				6028C0ADACECE3EAA78CDCCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3560F2C7DCE4F403CF2F2F8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0C1A39FFD28CD0AA27FE71D9 /* GoodAlarmMetadata.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FFD56C15222E08BB8C29E7F9 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				07A3F704619094E1FC506C5D /* ClipRenderer.swift */,
+				45365728730F277EFBFB31DA /* FadingPlayer.swift */,
+				62DBFBBFCD2FE4CF643056EF /* RingEngine.swift */,
+				4E18E82C573721A2FE06259F /* SoundImporter.swift */,
+				52928475E37BB147E774EC0A /* SystemVolume.swift */,
+				B2FBE8AD41624DF16AEB1828 /* ToneSynth.swift */,
+				FBAB0106DB40EB879F056F7A /* Vibrator.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AE9C4F76E1C173FBF24DD44 /* GoodAlarmWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB26F49E4B5C96EC16501CF /* Build configuration list for PBXNativeTarget "GoodAlarmWidgets" */;
+			buildPhases = (
+				A38EE6E35AA6E54E1A54A352 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodAlarmWidgets;
+			packageProductDependencies = (
+			);
+			productName = GoodAlarmWidgets;
+			productReference = 115837F8D91E6835E2115957 /* GoodAlarmWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B1650DCBEBB1EC325A3F2013 /* GoodAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF351297D92B1B26C0A1DDF /* Build configuration list for PBXNativeTarget "GoodAlarm" */;
+			buildPhases = (
+				5D3CA58759C474F13448372D /* Sources */,
+				763BA5B05ED90B2B384A9616 /* Resources */,
+				3954D10AE6B28CF77982BBBB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA9FEA38251EE219A7DF0BC5 /* PBXTargetDependency */,
+			);
+			name = GoodAlarm;
+			packageProductDependencies = (
+			);
+			productName = GoodAlarm;
+			productReference = 7BF162EC181A2CE9B218CD15 /* GoodAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC6A53C5C48C137E6C051C26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9AE9C4F76E1C173FBF24DD44 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					B1650DCBEBB1EC325A3F2013 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8E232E085872C1BFDF1A75AB /* Build configuration list for PBXProject "GoodAlarm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EBEDDB45BAA2860C257B78AC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1650DCBEBB1EC325A3F2013 /* GoodAlarm */,
+				9AE9C4F76E1C173FBF24DD44 /* GoodAlarmWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		763BA5B05ED90B2B384A9616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B607AE0135A9AC7BA20A13F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D3CA58759C474F13448372D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD47A5DCC4FB19158FC6A32F /* AlarmEditorView.swift in Sources */,
+				2A0D16A8B24491D0ADA2FFB8 /* AlarmIntents.swift in Sources */,
+				838D12387DE751E85118C9A4 /* AlarmItem.swift in Sources */,
+				64D4CB5F7112A2E8A0894F5C /* AlarmListView.swift in Sources */,
+				E86BF79D69E71FE091945960 /* AlarmRowView.swift in Sources */,
+				8CE4E2DB15390913F0FFB73C /* AlarmScheduler.swift in Sources */,
+				D657986BD21AE75E49DB8706 /* AlarmStore.swift in Sources */,
+				BEB87B815634FD43459C52A9 /* AppSettings.swift in Sources */,
+				3CE2B6535BBAE03F11BA4386 /* ClipRenderer.swift in Sources */,
+				64E01C416DA0F0392D16B5CE /* Components.swift in Sources */,
+				48C09C0476129E8116683F2A /* FadingPlayer.swift in Sources */,
+				167CC4A059A97992B1042BDF /* GoodAlarmApp.swift in Sources */,
+				2BFC0AA75D7B10A2CE126223 /* GoodAlarmMetadata.swift in Sources */,
+				B74D638C914A90FE58D05617 /* RingEngine.swift in Sources */,
+				F327006D73120166C3F575D4 /* RingingView.swift in Sources */,
+				5DE498198B9A4C6E37A249ED /* SettingsView.swift in Sources */,
+				CF74DA7D23F313DC7BD553D4 /* SoundImporter.swift in Sources */,
+				50D3303E57B4CD2C66061F1F /* SoundItem.swift in Sources */,
+				B9C782A5BF0341D9D258E3E2 /* SoundLibrary.swift in Sources */,
+				301CADADB172B265E91EA4E5 /* SoundPickerView.swift in Sources */,
+				0736BA8C64DF9DA4315222DA /* SystemVolume.swift in Sources */,
+				3240B4B3000C61CD82CF7B86 /* ToneSynth.swift in Sources */,
+				94FB07F102495A4C3844B4C8 /* Vibration.swift in Sources */,
+				2C0E33088C1A9FABE4E9AB13 /* Vibrator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38EE6E35AA6E54E1A54A352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8225F3840A65253858A677A1 /* AlarmLiveActivity.swift in Sources */,
+				D4CF393FF95DE5E7DC8381FB /* GoodAlarmMetadata.swift in Sources */,
+				16FB9128455225F331D30A56 /* GoodAlarmWidgetsBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA9FEA38251EE219A7DF0BC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AE9C4F76E1C173FBF24DD44 /* GoodAlarmWidgets */;
+			targetProxy = A072A4F3051819516A1E820B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		363E979B50120FE335989484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GoodAlarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.joaomelorodrigues.GoodAlarm;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		478F9240262B85EFC36DA008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48AB226DBD6825146BFF1567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GoodAlarmWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.joaomelorodrigues.GoodAlarm.Widgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		576DE4AF835EF3E50AD7AAE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89E2439A0BB283AE0F3AEF11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GoodAlarmWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.joaomelorodrigues.GoodAlarm.Widgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98E7DBFEBE0D5ADE0A0E406D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GoodAlarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.joaomelorodrigues.GoodAlarm;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E232E085872C1BFDF1A75AB /* Build configuration list for PBXProject "GoodAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				478F9240262B85EFC36DA008 /* Debug */,
+				576DE4AF835EF3E50AD7AAE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EBF351297D92B1B26C0A1DDF /* Build configuration list for PBXNativeTarget "GoodAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98E7DBFEBE0D5ADE0A0E406D /* Debug */,
+				363E979B50120FE335989484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FAB26F49E4B5C96EC16501CF /* Build configuration list for PBXNativeTarget "GoodAlarmWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E2439A0BB283AE0F3AEF11 /* Debug */,
+				48AB226DBD6825146BFF1567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC6A53C5C48C137E6C051C26 /* Project object */;
+}

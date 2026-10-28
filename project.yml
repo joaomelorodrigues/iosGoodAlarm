@@ -1,0 +1,60 @@
+name: GoodAlarm
+options:
+  bundleIdPrefix: io.github.joaomelorodrigues
+  deploymentTarget:
+    iOS: "26.1"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+    SWIFT_APPROACHABLE_CONCURRENCY: YES
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ""
+    TARGETED_DEVICE_FAMILY: "1,2"
+targets:
+  GoodAlarm:
+    type: application
+    platform: iOS
+    sources:
+      - path: GoodAlarm
+      - path: Shared
+    info:
+      path: GoodAlarm/Info.plist
+      properties:
+        CFBundleDisplayName: Good Alarm
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIBackgroundModes: [audio]
+        NSSupportsLiveActivities: true
+        ITSAppUsesNonExemptEncryption: false
+        NSAlarmKitUsageDescription: Good Alarm schedules your alarms so they ring even in silent mode, during Focus, and when the app is closed.
+        NSAppleMusicUsageDescription: Good Alarm lets you wake up to songs from your music library.
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.github.joaomelorodrigues.GoodAlarm
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies:
+      - target: GoodAlarmWidgets
+  GoodAlarmWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: GoodAlarmWidgets
+      - path: Shared
+    info:
+      path: GoodAlarmWidgets/Info.plist
+      properties:
+        CFBundleDisplayName: Good Alarm
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.github.joaomelorodrigues.GoodAlarm.Widgets
