@@ -10,6 +10,7 @@
 		0736BA8C64DF9DA4315222DA /* SystemVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52928475E37BB147E774EC0A /* SystemVolume.swift */; };
 		167CC4A059A97992B1042BDF /* GoodAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04181883E59A412F9D5B358 /* GoodAlarmApp.swift */; };
 		16FB9128455225F331D30A56 /* GoodAlarmWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D30B2C1284C041B91D285 /* GoodAlarmWidgetsBundle.swift */; };
+		29578523C23FA77B1CD6F1A5 /* RingingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FB97A452BF552DB390FC1 /* RingingPresenter.swift */; };
 		2A0D16A8B24491D0ADA2FFB8 /* AlarmIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1272FD665F4525346DAD8E00 /* AlarmIntents.swift */; };
 		2BFC0AA75D7B10A2CE126223 /* GoodAlarmMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A39FFD28CD0AA27FE71D9 /* GoodAlarmMetadata.swift */; };
 		2C0E33088C1A9FABE4E9AB13 /* Vibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB0106DB40EB879F056F7A /* Vibrator.swift */; };
@@ -18,6 +19,7 @@
 		3CE2B6535BBAE03F11BA4386 /* ClipRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A3F704619094E1FC506C5D /* ClipRenderer.swift */; };
 		48C09C0476129E8116683F2A /* FadingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45365728730F277EFBFB31DA /* FadingPlayer.swift */; };
 		50D3303E57B4CD2C66061F1F /* SoundItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CCA29BEC1EE7D32E5A7B8D /* SoundItem.swift */; };
+		5265CECB03CE78DDA632AFAE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = BE7588455154D68B2494F6D8 /* PrivacyInfo.xcprivacy */; };
 		59ED82395E2E42DC03559C1B /* GoodAlarmWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 115837F8D91E6835E2115957 /* GoodAlarmWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5DE498198B9A4C6E37A249ED /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F7FE7CD607B6FE81F0FFA /* SettingsView.swift */; };
 		64D4CB5F7112A2E8A0894F5C /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6250C6A9DE5E1519C58E77CF /* AlarmListView.swift */; };
@@ -87,11 +89,13 @@
 		8AC5F74FEA1E22AF31D09275 /* RingingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingView.swift; sourceTree = "<group>"; };
 		B2FBE8AD41624DF16AEB1828 /* ToneSynth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneSynth.swift; sourceTree = "<group>"; };
 		BCF669B1F73A15F3B0E1232F /* AlarmEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEditorView.swift; sourceTree = "<group>"; };
+		BE7588455154D68B2494F6D8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		CF0F7FE7CD607B6FE81F0FFA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		DB24A31BDFD2CB56970C1BB7 /* Vibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
 		E04181883E59A412F9D5B358 /* GoodAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodAlarmApp.swift; sourceTree = "<group>"; };
 		E23D30B2C1284C041B91D285 /* GoodAlarmWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodAlarmWidgetsBundle.swift; sourceTree = "<group>"; };
 		E8CCA29BEC1EE7D32E5A7B8D /* SoundItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundItem.swift; sourceTree = "<group>"; };
+		EA1FB97A452BF552DB390FC1 /* RingingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingPresenter.swift; sourceTree = "<group>"; };
 		F33F18C31F989106D344868D /* AlarmScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmScheduler.swift; sourceTree = "<group>"; };
 		FBAB0106DB40EB879F056F7A /* Vibrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibrator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +146,7 @@
 				6250C6A9DE5E1519C58E77CF /* AlarmListView.swift */,
 				3A3A80D50DE2986C413F4918 /* AlarmRowView.swift */,
 				191B6479B9CD5F0FEEE486C2 /* Components.swift */,
+				EA1FB97A452BF552DB390FC1 /* RingingPresenter.swift */,
 				8AC5F74FEA1E22AF31D09275 /* RingingView.swift */,
 				CF0F7FE7CD607B6FE81F0FFA /* SettingsView.swift */,
 				66E3800DEA922DDB80C77C9E /* SoundPickerView.swift */,
@@ -162,6 +167,7 @@
 			children = (
 				471DDA10B029F0D7D497D5E9 /* Assets.xcassets */,
 				2002F48FA46CC383EBA67A8A /* Info.plist */,
+				BE7588455154D68B2494F6D8 /* PrivacyInfo.xcprivacy */,
 				9013802AA5259CF8E023AF10 /* App */,
 				FFD56C15222E08BB8C29E7F9 /* Audio */,
 				4AB03052AD07C3BBF0DD28FC /* Intents */,
@@ -307,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B607AE0135A9AC7BA20A13F3 /* Assets.xcassets in Resources */,
+				5265CECB03CE78DDA632AFAE /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +338,7 @@
 				167CC4A059A97992B1042BDF /* GoodAlarmApp.swift in Sources */,
 				2BFC0AA75D7B10A2CE126223 /* GoodAlarmMetadata.swift in Sources */,
 				B74D638C914A90FE58D05617 /* RingEngine.swift in Sources */,
+				29578523C23FA77B1CD6F1A5 /* RingingPresenter.swift in Sources */,
 				F327006D73120166C3F575D4 /* RingingView.swift in Sources */,
 				5DE498198B9A4C6E37A249ED /* SettingsView.swift in Sources */,
 				CF74DA7D23F313DC7BD553D4 /* SoundImporter.swift in Sources */,

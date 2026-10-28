@@ -22,7 +22,7 @@ Test real ringing on a device; the simulator doesn't reproduce silent mode or th
 | Layer | When | What you get |
 | --- | --- | --- |
 | **System alarm** (AlarmKit) | Always | Rings through silent mode, Focus and a closed app. Your song, start position, volume and fade (up to 20 s) are mixed into a 29 s clip in `Library/Sounds`, because AlarmKit has no volume API and needs sounds under 30 s. |
-| **Full-song mode** (`RingEngine`) | App left in the app switcher | Plays the whole track, sets the phone volume, fades in over up to 5 min. Seconds before the alarm it takes that ring over from AlarmKit and schedules a system **safety alarm** a few minutes later in case you sleep through it or the app dies. |
+| **Full-song mode** (`RingEngine`, opt-in in Settings) | App left in the app switcher | Plays the whole track, sets the phone volume, fades in over up to 5 min. Seconds before the alarm it takes that ring over from AlarmKit and schedules a system **safety alarm** a few minutes later in case you sleep through it or the app dies. |
 
 If the app is killed overnight, nothing was taken over, so the system alarm rings as usual.
 

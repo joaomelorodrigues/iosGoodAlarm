@@ -8,7 +8,7 @@ nonisolated enum AppSettings {
     static let lastSoundIDKey = "lastSoundID"
 
     static var fullSongMode: Bool {
-        UserDefaults.standard.object(forKey: fullSongModeKey) as? Bool ?? true
+        UserDefaults.standard.object(forKey: fullSongModeKey) as? Bool ?? false
     }
 
     static var overrideSystemVolume: Bool {

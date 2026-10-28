@@ -47,6 +47,7 @@ struct RingingView: View {
                 } label: {
                     Label("Snooze \(minutes) min", systemImage: "zzz")
                         .font(.title3.weight(.semibold))
+                        .foregroundStyle(Color(red: 0.32, green: 0.13, blue: 0.08))
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 14)
                 }

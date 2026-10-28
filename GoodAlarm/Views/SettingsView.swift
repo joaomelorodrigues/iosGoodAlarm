@@ -4,7 +4,7 @@ struct SettingsView: View {
     @Environment(AlarmStore.self) private var store
     @Environment(\.dismiss) private var dismiss
     @Environment(\.openURL) private var openURL
-    @AppStorage(AppSettings.fullSongModeKey) private var fullSongMode = true
+    @AppStorage(AppSettings.fullSongModeKey) private var fullSongMode = false
     @AppStorage(AppSettings.overrideSystemVolumeKey) private var overrideSystemVolume = true
     @AppStorage(AppSettings.safetyDelayMinutesKey) private var safetyDelayMinutes = 3
 
@@ -36,7 +36,7 @@ struct SettingsView: View {
                 } header: {
                     Text("Full-song mode")
                 } footer: {
-                    Text("When Good Alarm is left in the app switcher (don't swipe it away), it plays the whole song, sets the phone to your chosen volume, and fades in over as long as you like. A system safety alarm still rings after the delay above if you haven't stopped it. Uses a little battery overnight.")
+                    Text("When Good Alarm is left in the app switcher (don't swipe it away), it plays the whole song, sets the phone to your chosen volume, and fades in over as long as you like. A system safety alarm still rings after the delay above if you haven't stopped it. Off by default: keeping the app running overnight uses some battery.")
                 }
 
                 Section("How Good Alarm rings") {

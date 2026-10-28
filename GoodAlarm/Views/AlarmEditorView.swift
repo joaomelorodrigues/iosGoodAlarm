@@ -3,7 +3,7 @@ import SwiftUI
 struct AlarmEditorView: View {
     @Environment(AlarmStore.self) private var store
     @Environment(\.dismiss) private var dismiss
-    @AppStorage(AppSettings.fullSongModeKey) private var fullSongMode = true
+    @AppStorage(AppSettings.fullSongModeKey) private var fullSongMode = false
 
     @State private var draft: AlarmItem
     @State private var skipNext: Bool

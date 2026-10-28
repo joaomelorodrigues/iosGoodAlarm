@@ -14,9 +14,8 @@ struct GoodAlarmApp: App {
                 .environment(store)
                 .environment(engine)
                 .background { HiddenVolumeView().frame(width: 1, height: 1) }
-                .fullScreenCover(item: Binding(get: { engine.ringing }, set: { _ in })) { ringing in
-                    RingingView(ringing: ringing)
-                        .environment(engine)
+                .onChange(of: engine.ringing) { _, ringing in
+                    RingingPresenter.shared.update(ringing)
                 }
                 .task {
                     await store.bootstrap()
