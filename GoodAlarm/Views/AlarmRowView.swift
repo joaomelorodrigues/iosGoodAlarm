@@ -2,6 +2,7 @@ import SwiftUI
 
 struct AlarmRowView: View {
     @Environment(AlarmStore.self) private var store
+    @AppStorage(AppSettings.fullSongModeKey) private var fullSongMode = false
     let item: AlarmItem
     let onEdit: () -> Void
 
@@ -56,7 +57,8 @@ struct AlarmRowView: View {
                         Label(FadeOption.shortLabel(item.fadeInSeconds), systemImage: "chart.line.uptrend.xyaxis")
                     }
                 }
-                if item.vibrate && !item.isVibrateOnly && Haptics.isSupported {
+                // Without full-song mode the system alarm rings, and it always vibrates.
+                if (item.vibrate || !fullSongMode) && !item.isVibrateOnly && Haptics.isSupported {
                     Image(systemName: "iphone.radiowaves.left.and.right")
                         .accessibilityLabel("Vibrates")
                 }

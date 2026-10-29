@@ -212,10 +212,14 @@ struct AlarmEditorView: View {
 
     private var vibrationSection: some View {
         Section {
-            if Haptics.isSupported {
+            if !Haptics.isSupported {
+                LabeledContent("Vibration", value: "Not available on this device")
+            } else if draft.isVibrateOnly || !fullSongMode {
+                // System alarms always vibrate; don't offer a switch that wouldn't do anything.
+                LabeledContent("Vibrate", value: "Always")
+            } else {
                 Toggle("Vibrate", isOn: $draft.vibrate)
-                    .disabled(draft.isVibrateOnly)
-                if draft.vibrate && !draft.isVibrateOnly {
+                if draft.vibrate {
                     Picker("Pattern", selection: $draft.vibrationPattern) {
                         ForEach(VibrationPattern.allCases) { Text($0.name).tag($0) }
                     }
@@ -225,16 +229,18 @@ struct AlarmEditorView: View {
                         Label("Feel the pattern", systemImage: "iphone.radiowaves.left.and.right")
                     }
                 }
-            } else {
-                LabeledContent("Vibration", value: "Not available on this device")
             }
         } header: {
             Text("Vibration")
         } footer: {
             if Haptics.isSupported {
-                Text(draft.isVibrateOnly
-                     ? "Uses the iPhone's own alarm vibration."
-                     : "Patterns play when Good Alarm rings in full-song mode. When the system alarm rings instead (app closed), the iPhone uses its own alarm vibration, which apps can't change or turn off.")
+                if draft.isVibrateOnly {
+                    Text("Uses the iPhone's own alarm vibration.")
+                } else if !fullSongMode {
+                    Text("iOS always vibrates for system alarms, and apps can't turn that off or change the pattern. Turn on full-song mode in Settings to pick a pattern or turn vibration off when Good Alarm rings the alarm itself.")
+                } else {
+                    Text("Applies when Good Alarm rings in full-song mode. When the system alarm rings instead (app closed, the safety alarm, or a test), iOS always vibrates its own way.")
+                }
             }
         }
     }
@@ -282,7 +288,7 @@ struct AlarmEditorView: View {
             }
             .disabled(isTesting)
         } footer: {
-            Text("Lock the phone and put it on silent to hear exactly what will wake you, even with the app closed.")
+            Text("Lock the phone and put it on silent to hear exactly what will wake you, even with the app closed. System alarms always vibrate.")
         }
     }
 
